@@ -12,12 +12,25 @@
     <!-- Uses a transparent header that draws on top of the layout's background -->
   </head>
   <body>
-    {% include 'shared/_navbar.html '%}
-    <main class="main-content content">
-      {% block content %} {% endblock %}
-    </main>
+      <section class="hero is-info is-fullheight">
+          <div class="hero-head">
+              {% include 'shared/_navbar.html '%}
+          </div>
+
+          <div class="hero-body">
+              <div class="container">
+                  {% block content %} {% endblock %}
+              </div>
+            </div>
+
+           
     {% include 'shared/_footer.html '%}
+
+      </section>
   </body>
   <script src="{% static 'js/bulma.min.js'%}"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+  ></script>
 </html>

@@ -1,86 +1,91 @@
-{% extends 'base.html' %} {% block content%}
-
-<div class="card">
-  <header class="card-header">
-    <p class="card-header-title is-centered">
-      Pesquisar imóveis
-    </p>
-  </header>
-  <div class="card-content">
-    <div class="content">
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">Palavra chave</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <input class="input" type="text" placeholder="teste" />
+{% extends 'base.html' %} {% block content%}  
+  <div class="card">
+    <header class="card-header">
+      <p class="card-header-title is-centered">
+        Pesquisar imóveis
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content">
+          <form>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Palavra chave</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input" type="text" placeholder="teste" />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="field-label is-normal">
-          <label class="label">Cidade</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <input class="input" type="text" placeholder="Franca" />
+          <div class="field-label is-normal">
+            <label class="label">Cidade</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input" type="text" placeholder="Franca" />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">Estado</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <div class="select is-fullwidth">
-                <select>
-                  <option>Todos</option>
-                </select>
+          <div class="field-label is-normal">
+            <label class="label">Estado</label>
+          </div>
+          <div class="field-body">
+            <div class="field is-full-width">
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>Todos</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="field-label is-normal">
-          <label class="label">Quartos</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <div class="select is-fullwidth">
-                <select>
-                  <option>Todos</option>
-                  <option>0</option>
-                  <option>1</option>
-                  <option>2</option>
-                </select>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Quartos</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>Todos</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field-label is-normal">
+            <label class="label">Maior Preço</label>
+          </div>
+          <div class="field-body">
+            <div class="field is-narrow">
+              <div class="control">
+                <input class="input" type="text" placeholder="120.000,00" />
               </div>
             </div>
           </div>
         </div>
-
-        <div class="field-label is-normal">
-          <label class="label">Maior Preço</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <input class="input" type="text" placeholder="120.000,00" />
-            </div>
-          </div>
-        </div>
       </div>
+        <footer class="card-footer">
+        <div class="control">
+          <button class="button is-primary">Pesquisar</button>
+          
+        </div>
+      </footer>
+    </form>
     </div>
-    <footer class="card-footer">
-      <a class="button is-primary">Pesquisar</a>
-    </footer>
   </div>
-  {% endblock %}
-</div>
+
+{% endblock %}

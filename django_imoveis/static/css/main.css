@@ -1,20 +1,6 @@
-/* html,
-body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content {
-  justify-content: center;
-  padding: 20px;
-}
-
-.footer {
+.card-footer {
   display: flex;
   justify-content: center;
-  flex-shrink: 0;
-} */
+  margin: auto;
+  padding-top: 20px;
+}
