@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Django Imoveis</title>
+
+    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+  </head>
+  <body>
+    {% include 'shared/_navbar.html '%}
+    <main class="main-content content">
+      {% block content %} {% endblock %}
+    </main>
+    {% include 'shared/_footer.html '%}
+  </body>
+  <script src="{% static 'js/bulma.min.js'%}"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</html>
