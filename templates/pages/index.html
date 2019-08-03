@@ -1,91 +1,335 @@
-{% extends 'base.html' %} {% block content%}  
+{% extends 'base.html' %} {% block content%}
+
+<div class="ui inverted segment">
+  <div class="ui inverted form">
+    <div class="three fields">
+      <div class="field">
+        <label>Palavra chave</label>
+        <input placeholder="Palavra chave" type="text" />
+      </div>
+      <div class="field">
+        <label>Cidade</label>
+        <input placeholder="Cidade" type="text" />
+      </div>
+      <div class="field">
+        <label>Estado</label>
+        <select>
+          <option value="">Todos</option>
+          <option value="1">SP</option>
+          <option value="0">RJ</option>
+        </select>
+      </div>
+    </div>
+    <div class="two fields">
+      <div class="field">
+        <label>Quartos</label>
+        <select>
+          <option value="">Todos</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Preço</label>
+        <input placeholder="120.000,00" type="text" />
+      </div>
+    </div>
+    <div class="ui submit primary fluid button">Pesquisar</div>
+  </div>
+</div>
+
+<h2 class="ui dividing header">Ultimos imóveis<a class="anchor"></a></h2>
+
+<div class="ui link cards">
   <div class="card">
-    <header class="card-header">
-      <p class="card-header-title is-centered">
-        Pesquisar imóveis
-      </p>
-    </header>
-    <div class="card-content">
-      <div class="content">
-          <form>
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
-            <label class="label">Palavra chave</label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control">
-                <input class="input" type="text" placeholder="teste" />
-              </div>
-            </div>
-          </div>
-
-          <div class="field-label is-normal">
-            <label class="label">Cidade</label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control">
-                <input class="input" type="text" placeholder="Franca" />
-              </div>
-            </div>
-          </div>
-
-          <div class="field-label is-normal">
-            <label class="label">Estado</label>
-          </div>
-          <div class="field-body">
-            <div class="field is-full-width">
-              <div class="control">
-                <div class="select">
-                  <select>
-                    <option>Todos</option>
-                  </select>
-                </div>
-              </div>
-            </div>
+    <div class="image">
+      <img src="" />
+    </div>
+    <div class="content">
+      <div class="header">Nome do imovel teste</div>
+      <div class="meta">
+        <a>Rua teste 123, Franca, SP</a>
+      </div>
+      <div class="description">
+        Casa perto de muitos bares :)
+      </div>
+      <br />
+      <div class="event">
+        <div class="content">
+          <div class="summary">
+            Quartos: 2
           </div>
         </div>
 
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
-            <label class="label">Quartos</label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control">
-                <div class="select">
-                  <select>
-                    <option>Todos</option>
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                  </select>
-                </div>
-              </div>
+        <div class="event">
+          <div class="content">
+            <div class="summary">
+              M²: 200
             </div>
           </div>
 
-          <div class="field-label is-normal">
-            <label class="label">Maior Preço</label>
-          </div>
-          <div class="field-body">
-            <div class="field is-narrow">
-              <div class="control">
-                <input class="input" type="text" placeholder="120.000,00" />
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Garagem: 2
               </div>
             </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Banheiros: 2
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Postado a 2 horas
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="extra content">
+            <div class="ui submit primary fluid button">Mais informações</div>
           </div>
         </div>
       </div>
-        <footer class="card-footer">
-        <div class="control">
-          <button class="button is-primary">Pesquisar</button>
-          
-        </div>
-      </footer>
-    </form>
     </div>
   </div>
+
+  <div class="card">
+    <div class="image">
+      <img src="" />
+    </div>
+    <div class="content">
+      <div class="header">Nome do imovel teste</div>
+      <div class="meta">
+        <a>Rua teste 123, Franca, SP</a>
+      </div>
+      <div class="description">
+        Casa perto de muitos bares :)
+      </div>
+      <br />
+      <div class="event">
+        <div class="content">
+          <div class="summary">
+            Quartos: 2
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="content">
+            <div class="summary">
+              M²: 200
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Garagem: 2
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Banheiros: 2
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Postado a 2 horas
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="extra content">
+            <div class="ui submit primary fluid button">Mais informações</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="image">
+      <img src="" />
+    </div>
+    <div class="content">
+      <div class="header">Nome do imovel teste</div>
+      <div class="meta">
+        <a>Rua teste 123, Franca, SP</a>
+      </div>
+      <div class="description">
+        Casa perto de muitos bares :)
+      </div>
+      <br />
+      <div class="event">
+        <div class="content">
+          <div class="summary">
+            Quartos: 2
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="content">
+            <div class="summary">
+              M²: 200
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Garagem: 2
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Banheiros: 2
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Postado a 2 horas
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="extra content">
+            <div class="ui submit primary fluid button">Mais informações</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="image">
+      <img src="" />
+    </div>
+    <div class="content">
+      <div class="header">Nome do imovel teste</div>
+      <div class="meta">
+        <a>Rua teste 123, Franca, SP</a>
+      </div>
+      <div class="description">
+        Casa perto de muitos bares :)
+      </div>
+      <br />
+      <div class="event">
+        <div class="content">
+          <div class="summary">
+            Quartos: 2
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="content">
+            <div class="summary">
+              M²: 200
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Garagem: 2
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Banheiros: 2
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Postado a 2 horas
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="extra content">
+            <div class="ui submit primary fluid button">Mais informações</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="image">
+      <img src="" />
+    </div>
+    <div class="content">
+      <div class="header">Nome do imovel teste</div>
+      <div class="meta">
+        <a>Rua teste 123, Franca, SP</a>
+      </div>
+      <div class="description">
+        Casa perto de muitos bares :)
+      </div>
+      <br />
+      <div class="event">
+        <div class="content">
+          <div class="summary">
+            Quartos: 2
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="content">
+            <div class="summary">
+              M²: 200
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Garagem: 2
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Banheiros: 2
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Postado a 2 horas
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="extra content">
+            <div class="ui submit primary fluid button">Mais informações</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
