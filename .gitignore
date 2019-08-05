@@ -9,4 +9,4 @@ db.sqlite3
 venv
 /static
 /node_modules
-
+.env
