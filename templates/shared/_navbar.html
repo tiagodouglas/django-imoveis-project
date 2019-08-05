@@ -1,7 +1,7 @@
 {% load static %}
 
-<div class="ui menu inverted">
-      <a href="#" class="header item">
+<div class="ui menu">
+      <a href="{% url 'index' %}" class="header item">
           Django Imóveis
         </a>
     <a href="{% url 'index' %}"
@@ -13,7 +13,7 @@
     >
       Home
     </a>
-    <a 
+    <a href="{% url 'catalog' %}"
     {% if 'catalog' in request.path  %}  
         class="active item"    
         {% else %}
